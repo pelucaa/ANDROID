@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="439dp"
+        android:layout_height="32dp"
+        android:text="BIENVENIDO "
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/Cotizacion"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="COTIZA CON NOSOTROS"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Telefono" />
+
+    <EditText
+        android:id="@+id/Gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Gmail" />
+
+    <EditText
+        android:id="@+id/Nesecitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Que Nesecitas?" />
+
+    <RadioButton
+        android:id="@+id/Chile"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:focusable="true"
+        android:text="CHILENO" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="" />
+
+    <ProgressBar
+        android:id="@+id/Cargando"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RatingBar
+        android:id="@+id/Estrella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:numStars="5" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="130dp"
+        android:spinnerMode="dialog"
+        android:entries="@array/item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="57dp"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="264dp"
+        android:layout_height="73dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="61dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR" />
+
+    <Button
+        android:id="@+id/Otro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOSTRAR" />
+
+</LinearLayout>

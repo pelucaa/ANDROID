@@ -46,7 +46,11 @@ Button plop;
         plop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder b = new AlertDialog.Builder(this);
+                AlertDialog.Builder b = new AlertDialog.Builder (this);/*
+                profe se que aca no pesca el this por que no sabe el contexto, que esta
+                 dentro de un evento que no sabe como ejecutara
+
+                */
                 b.setCancelable(true);
                 b.setTitle("TOMA");
                 b.setMessage(a.getText().toString()+b.getContext()+e.getText().toString()+c.getText().toString()+ g.getRating());

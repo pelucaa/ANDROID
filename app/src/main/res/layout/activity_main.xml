@@ -81,18 +81,6 @@
 
         android:numStars="5" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="130dp"
-        android:spinnerMode="dialog"
-        android:entries="@array/item" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="57dp"
-        android:layout_height="65dp" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="264dp"
@@ -106,23 +94,17 @@
         android:text="ENVIAR" />
 
     <Button
-        android:id="@+id/Otro"
+        android:id="@+id/catalogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MOSTRAR" />
+        android:onClick="siguiente"
+        android:text="VER CATALOGO" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="152dp"
-        android:layout_height="48dp" />
-
-    <ScrollView
+    <Button
+        android:id="@+id/LOGIN"
         android:layout_width="match_parent"
-        android:layout_height="47dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:onClick="siguiente5"
+        android:text="LOGIN ADMIN" />
 
 </LinearLayout>

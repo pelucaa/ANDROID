@@ -3,6 +3,7 @@ package com.example.tarea_1;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,7 +38,7 @@ Button plop;
         Cargando();
         g = (RatingBar) findViewById(R.id.Estrella);
 
-        plop = (Button) findViewById(R.id.Otro);
+        plop = (Button) findViewById(R.id.catalogo);
         Nombre();
         Chile();
 
@@ -46,11 +47,7 @@ Button plop;
         plop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder b = new AlertDialog.Builder (this);/*
-                profe se que aca no pesca el this por que no sabe el contexto, que esta
-                 dentro de un evento que no sabe como ejecutara
-
-                */
+                AlertDialog.Builder b = new AlertDialog.Builder (MainActivity.this );
                 b.setCancelable(true);
                 b.setTitle("TOMA");
                 b.setMessage(a.getText().toString()+b.getContext()+e.getText().toString()+c.getText().toString()+ g.getRating());
@@ -90,5 +87,20 @@ Button plop;
 
     }
 
+ public void siguiente(View v){
+        Intent sig = new Intent(this,MainActivity2.class);
+        startActivity(sig);
 
+
+
+
+    }
+    public void siguiente5(View v){
+        Intent sig = new Intent(this,Login.class);
+        startActivity(sig);
+
+
+
+
+    }
 }

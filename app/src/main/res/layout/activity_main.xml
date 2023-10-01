@@ -81,12 +81,6 @@
 
         android:numStars="5" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="264dp"
-        android:layout_height="73dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <Button
         android:id="@+id/Enviar"
         android:layout_width="match_parent"
@@ -106,5 +100,11 @@
         android:layout_height="wrap_content"
         android:onClick="siguiente5"
         android:text="LOGIN ADMIN" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whyskys" />
 
 </LinearLayout>
